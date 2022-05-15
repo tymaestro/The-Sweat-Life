@@ -8,3 +8,5 @@ from .models import Activity
 class ActivityList(generic.ListView):
     model = Activity
     template_name = "index.html"
+
+
