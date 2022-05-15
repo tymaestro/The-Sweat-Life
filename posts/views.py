@@ -10,3 +10,6 @@ class ActivityList(generic.ListView):
     template_name = "index.html"
 
 
+class ActivityView(generic.DetailView):
+    model = Activity
+    template_name = "activity_detail.html"

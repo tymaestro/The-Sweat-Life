@@ -11,7 +11,7 @@
                 <div class="col-sm-4">
                     <div class="card mb-3">
                         <div class="card-body">
-                            <a href="#">
+                            <a href="{% url 'activity_detail' activity.pk %}">
                                 <h2 class="card-title">{{ activity.title }}</h2>
                             </a>
                                 <p class="card-text">{{ activity.excerpt }}</p>
