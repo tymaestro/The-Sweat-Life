@@ -33,3 +33,10 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"{self.content} by {self.name}"
+
+
+# class ActivityType(models.Model):
+
+#     ACTIVITY_CHOICES = ((0, "Run"), (1, "Cycle"))
+
+#     activity_choices = models.IntegerField(choices=ACTIVITY_CHOICES, default=0)
