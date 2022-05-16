@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.views import generic
 from .models import Activity
+from .forms import ActivityForm
 
 # Create your views here.
 
@@ -17,5 +18,6 @@ class ActivityView(generic.DetailView):
 
 class CreateActivity(generic.CreateView):
     model = Activity
+    form_class = ActivityForm
     template_name = "create_activity.html"
-    fields = '__all__'
+    # fields = ('title', 'athlete', 'content', 'excerpt')

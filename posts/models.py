@@ -7,7 +7,7 @@ from cloudinary.models import CloudinaryField
 
 class Activity(models.Model):
     title = models.CharField(max_length=100, unique=True)
-    # slug = models.SlugField(max_length=100, unique=True)
+    slug = models.SlugField(max_length=100, unique=True)
     athlete = models.ForeignKey(User, on_delete=models.CASCADE, related_name="posts")
     updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField()
