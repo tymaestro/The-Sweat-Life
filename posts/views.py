@@ -5,6 +5,10 @@ from .forms import ActivityForm
 
 # Create your views here.
 
+# class IndexView(generic.View):
+#     model = Activity
+#     template_name = "index.html"
+
 
 class ActivityList(generic.ListView):
     model = Activity
@@ -20,4 +24,13 @@ class CreateActivity(generic.CreateView):
     model = Activity
     form_class = ActivityForm
     template_name = "create_activity.html"
-    # fields = ('title', 'athlete', 'content', 'excerpt')
+
+
+class UpdateActivity(generic.UpdateView):
+    model = Activity
+    template_name = "update_activity.html"
+
+
+class DeleteActivity(generic.DeleteView):
+    model = Activity
+    template_name = "delete_activity.html"

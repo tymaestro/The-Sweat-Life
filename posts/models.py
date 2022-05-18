@@ -22,21 +22,14 @@ class Activity(models.Model):
         return self.title
 
 
-class Comment(models.Model):
-    activity = models.ForeignKey(User, on_delete=models.CASCADE, related_name="comments")
-    content = models.TextField()
-    pub_date = models.DateTimeField(auto_now_add=True)
-    name = models.CharField(max_length=40)
+# class Comment(models.Model):
+#     activity = models.ForeignKey(User, on_delete=models.CASCADE, related_name="comments")
+#     content = models.TextField()
+#     pub_date = models.DateTimeField(auto_now_add=True)
+#     name = models.CharField(max_length=40)
 
-    class Meta:
-        ordering = ['-pub_date']
+#     class Meta:
+#         ordering = ['-pub_date']
 
-    def __str__(self):
-        return f"{self.content} by {self.name}"
-
-
-# class ActivityType(models.Model):
-
-#     ACTIVITY_CHOICES = ((0, "Run"), (1, "Cycle"))
-
-#     activity_choices = models.IntegerField(choices=ACTIVITY_CHOICES, default=0)
+#     def __str__(self):
+#         return f"{self.content} by {self.name}"

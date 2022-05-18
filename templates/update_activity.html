@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="col-md-6">Update Activity</h1>
+<div class="form-group col-md-6">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+    </form>
+</div>
+{% endblock %}
