@@ -29,6 +29,7 @@ class CreateActivity(generic.CreateView):
 class UpdateActivity(generic.UpdateView):
     model = Activity
     template_name = "update_activity.html"
+    fields = ('title', 'content', 'excerpt')
 
 
 class DeleteActivity(generic.DeleteView):
