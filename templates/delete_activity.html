@@ -1,5 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Delete Activity</h1>
+<h1 class="col-md-6">Delete Activity</h1>
+<h3>Delete Activity: {{ activity.title }}</h3>
+<div class="form-group col-md-6">
+    <form method="POST">
+        {% csrf_token %}
+    </form>
+</div>
 {% endblock %}
