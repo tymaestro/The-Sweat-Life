@@ -13,6 +13,7 @@ from .forms import ActivityForm
 class ActivityList(generic.ListView):
     model = Activity
     template_name = "index.html"
+    paginate_by = 6
 
 
 class ActivityView(generic.DetailView):
