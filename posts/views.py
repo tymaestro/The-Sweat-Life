@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.views import generic
 from django.urls import reverse_lazy
 from .models import Activity
@@ -22,19 +23,31 @@ class ActivityView(generic.DetailView):
     template_name = "activity_detail.html"
 
 
-class CreateActivity(generic.CreateView):
+class CreateActivity(LoginRequiredMixin, generic.CreateView):
     model = Activity
     form_class = ActivityForm
     template_name = "create_activity.html"
 
+    def form_valid(self, form):
+        form.instance.athlete = self.request.user
+        return super().form_valid(form)
 
-class UpdateActivity(generic.UpdateView):
+
+class UpdateActivity(LoginRequiredMixin, UserPassesTestMixin, generic.UpdateView):
     model = Activity
     template_name = "update_activity.html"
     fields = ('title', 'content', 'excerpt')
 
+    def test_func(self):
+        material = self.get_object()
+        return material.athlete == self.request.user
 
-class DeleteActivity(generic.DeleteView):
+
+class DeleteActivity(LoginRequiredMixin, UserPassesTestMixin, generic.DeleteView):
     model = Activity
     template_name = "delete_activity.html"
     success_url = reverse_lazy('activity_list')
+
+    def test_func(self):
+        material = self.get_object()
+        return material.athlete == self.request.user

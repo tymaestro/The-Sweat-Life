@@ -5,7 +5,7 @@ from .models import Activity
 class ActivityForm(forms.ModelForm):
     class Meta:
         model = Activity
-        fields = ('title', 'athlete', 'content', 'excerpt')
+        fields = ('title', 'content', 'excerpt')
 
         widgets = {
             'title': forms.TextInput(attrs={'class': 'form-control'}),
