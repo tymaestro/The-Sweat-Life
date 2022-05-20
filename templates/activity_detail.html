@@ -6,6 +6,8 @@
       <h1 class="display-4">{{ activity.title }}</h1>
       <p class="lead">{{ activity.content }}</p>
       <p class="card-text text-muted h6">{{ activity.athlete }} | {{ activity.pub_date }}</p>
+      <p class="card-text text-muted h6"><a href="{% url 'update_activity' activity.pk %}">Edit Activity</a></p>
+      <p class="card-text text-muted h6"><a href="{% url 'delete_activity' activity.pk %}">Delete Activity</a></p>
     </div>
   </div>
   <button><a href="{% url 'activity_list' %}">Back</a></button>

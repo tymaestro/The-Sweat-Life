@@ -43,7 +43,8 @@
     color: #ffffffcb;
 } */
 
-/* body {
-    background-image: url("/media/background-image.jpg");
+body {
+    background: url('/media/background-image.jpg');
     background-size: cover;
-} */
+    background-color: azure;
+}

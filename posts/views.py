@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.views import generic
+from django.urls import reverse_lazy
 from .models import Activity
 from .forms import ActivityForm
 
@@ -36,3 +37,4 @@ class UpdateActivity(generic.UpdateView):
 class DeleteActivity(generic.DeleteView):
     model = Activity
     template_name = "delete_activity.html"
+    success_url = reverse_lazy('activity_list')
