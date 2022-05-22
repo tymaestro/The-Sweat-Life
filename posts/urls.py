@@ -8,4 +8,5 @@ urlpatterns = [
     path('create_activity/', views.CreateActivity.as_view(), name='create_activity'),
     path('update_activity/<int:pk>', views.UpdateActivity.as_view(), name='update_activity'),
     path('delete_activity/<int:pk>', views.DeleteActivity.as_view(), name='delete_activity'),
+    path('create_comment/<int:pk>', views.CreateComment.as_view(), name='create_comment'),
 ]

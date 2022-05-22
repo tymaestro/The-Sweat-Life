@@ -14,5 +14,5 @@ class ActivityAdmin(SummernoteModelAdmin):
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
 
-    list_display = ('activity', 'content', 'name')
-    search_fields = ('activity', 'name')
+    list_display = ('athlete', 'content')
+    search_fields = ('athlete', 'name')

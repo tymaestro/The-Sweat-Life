@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.views import generic
 from django.urls import reverse_lazy
@@ -53,11 +52,12 @@ class DeleteActivity(LoginRequiredMixin, UserPassesTestMixin, generic.DeleteView
         return material.athlete == self.request.user
 
 
-# class CreateComment(LoginRequiredMixin, generic.CreateView):
-#     model = Comment
-#     form_class = CommentForm
-#     template_name = "create_activity.html"
+class CreateComment(generic.CreateView):
+    model = Comment
+    form_class = CommentForm
+    template_name = "create_comment.html"
+    success_url = reverse_lazy('activity_detail.html')
 
-#     def form_valid(self, form):
-#         form.instance.athlete = self.request.user
-#         return super().form_valid(form)
+    def form_valid(self, form):
+        form.instance.athlete = self.request.user
+        return super().form_valid(form)
