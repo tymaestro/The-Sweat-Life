@@ -16,7 +16,7 @@ As a standard (not logged-in) user, I would like to:
 <br>
 <br>
 
-3. Have a unique sign-up option with e-mail and password
+3. Have a unique sign-up option with username and password
 <br>
 <br>
 
@@ -70,7 +70,25 @@ As a registered (logged-in) user, I would like to:
 
 ## Features
 
-Navbar etc. (include images for each feature)
+### Navbar
+
+The navigation bar gives you access to the activities page as well as an opportunity to either login with a previously created account or create an account via the sign up option.
+
+
+The navigation bar once you are logged in gives you the opportunity to add your own activities as well as log out of your account.
+
+
+### Sign Up Page
+
+The sign up page allows you to create an account by providing a username and password for authentication. Creating an account gives you access to extra functionality such as the ability to create, edit, and delete your own activities and comment on the activities of others.
+
+### Login Page
+
+As with the sign up page, the login page allows previously registered users to access the extra functionality that having an account provides.
+
+### Activities Page
+
+### Create Activity Page
 
 ## Features Left To Implement
 
