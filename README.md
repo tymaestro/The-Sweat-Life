@@ -138,7 +138,38 @@ Django
 
 2. Click the resources tab to add the Heroku Postgres database.
 
-3. Click on the settings tab and reveal config vars. Copy the DATABASE_URL and paste it into the env.py file in your project. Mkae sure that the env.py file is in the .gitignore file
+3. Click on the settings tab and reveal config vars. Copy the DATABASE_URL and paste it into the env.py file in your project. Mkae sure that the env.py file is in the .gitignore file.
+
+4. Add a SECRET_KEY both to the env.py file and in the config vars on Heroku.
+
+5. In the Gitpod settings.py file, remove the insecure SECRET_KEY and replace it with the environment variable (SECRET_KEY) that was created.
+
+6. Replace existing DATABASES section in settings.py file with the DATABASE_URL environment variable that is located in the env.py file.
+
+7. Ensure that all static and files have been added to the settings.py file in Gitpod.
+
+8. Add the TEMPLATES_DIR to settings.py file in Gitpod and link it in the TEMPLATES section.
+
+9. Make sure that the project name for the Heroku app has been added as an allowed host in Gitpod.
+
+10. Ensure to create a Procfile and add web: gunicorn activities.wsgi to this file
+
+11. Make sure that the DEBUG flag is set to False in settings.py file in Gitpod
+
+12. Add X_FRAME OPTIONS = 'SAMEORIGIN' to the settings.py file to ensure that the Summernote editor works once the project is deployed.
+
+13. Make sure that all dependencies have been added to the requirements.txt file using the command pip3 freeze > requirements.txt
+
+WARNING: Heroku has halted automatic deployments from Github so the steps to build your Heroku app are as follows...
+
+Using the CLI, enter the following commands to deploy to Heroku
+
+1. Login to Heroku using the command heroku login -i
+2. Enter your email address and password
+3. Find the relevant app using the command heroku apps
+4. Set the Heroku remote using the command heroku git:remote -a <app_name>
+5. Add, commit and push to Github using the command git add . && git commit -m "Deploy to Heroku via CLI"
+6. Push to both Github and Heroku using the command git push origin main (for Github) and the command git push heroku main (for Heroku)
 
 ## Credits
 
