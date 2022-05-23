@@ -165,10 +165,15 @@ WARNING: Heroku has halted automatic deployments from Github so the steps to bui
 Using the CLI, enter the following commands to deploy to Heroku
 
 1. Login to Heroku using the command heroku login -i
+
 2. Enter your email address and password
+
 3. Find the relevant app using the command heroku apps
+
 4. Set the Heroku remote using the command heroku git:remote -a <app_name>
+
 5. Add, commit and push to Github using the command git add . && git commit -m "Deploy to Heroku via CLI"
+
 6. Push to both Github and Heroku using the command git push origin main (for Github) and the command git push heroku main (for Heroku)
 
 ## Credits

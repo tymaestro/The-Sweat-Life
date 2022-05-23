@@ -47,4 +47,5 @@ body {
     background: url('/media/background-image.jpg');
     background-size: cover;
     background-color: azure;
+    text-align: center;
 }
