@@ -112,11 +112,17 @@ The delete activity page displays a warning (defensive programming) to ensure th
 
 ## Features Left To Implement
 
+Add a calendar so that users can organise meet ups to exercise or explore nature in a group setting. This adds to the social aspect of this web application and encourages users to engage with others during their activities.
+
 ## Languages Used
 
 Python 3.0
 
+CSS
+
 ## Libraries, Frameworks, and Programs Used
+
+Django
 
 ## Code Validation
 
