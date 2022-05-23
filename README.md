@@ -88,9 +88,27 @@ As with the sign up page, the login page allows previously registered users to a
 
 ### Activities Page
 
+This page presents an ordered and paginated list of activities posted by users. Visible is the title and excerpt of the activity. These activities are public but an account must be created to leave a comment or create your own activities.
+
 ### Activity Detail Page
 
+The activity detail page presents the selected activtiy in detail including its title, excerpt, content and comments left by users.
+
 ### Create Activity Page
+
+The create activity page displays a form where you can enter a title, excerpt and the content of your activity.
+
+### Create Comment Page
+
+The create comment page is shown as a form where you can leave a comment on the selected post.
+
+### Edit Activity Page
+
+The edit activity page displays your activity as a form, pre-populated with the details and content previously provided so that you can edit your post.
+
+### Delete Activity Page
+
+The delete activity page displays a warning (defensive programming) to ensure that you are certain of your choice to delete the chosen activity and are aware of the consequences.
 
 ## Features Left To Implement
 
