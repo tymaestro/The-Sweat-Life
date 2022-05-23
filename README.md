@@ -88,6 +88,8 @@ As with the sign up page, the login page allows previously registered users to a
 
 ### Activities Page
 
+### Activity Detail Page
+
 ### Create Activity Page
 
 ## Features Left To Implement
