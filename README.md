@@ -134,7 +134,11 @@ Django
 
 ### Heroku Deployment
 
+1. Create a new app in the Heroku dashboard. Choose a name and location for your app.
 
+2. Click the resources tab to add the Heroku Postgres database.
+
+3. Click on the settings tab and reveal config vars. Copy the DATABASE_URL and paste it into the env.py file in your project. Mkae sure that the env.py file is in the .gitignore file
 
 ## Credits
 
