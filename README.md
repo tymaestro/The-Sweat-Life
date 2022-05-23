@@ -132,7 +132,9 @@ Django
 
 ## Deployment
 
-Description of Heroku deployment
+### Heroku Deployment
+
+
 
 ## Credits
 
