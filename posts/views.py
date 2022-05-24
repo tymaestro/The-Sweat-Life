@@ -61,3 +61,23 @@ class CreateComment(generic.CreateView):
     def form_valid(self, form):
         form.instance.athlete = self.request.user
         return super().form_valid(form)
+
+
+class UpdateComment(LoginRequiredMixin, UserPassesTestMixin, generic.UpdateView):
+    model = Comment
+    template_name = "update_comment.html"
+    fields = ('content',)
+
+    def test_func(self):
+        material = self.get_object()
+        return material.athlete == self.request.user
+
+
+class DeleteComment(LoginRequiredMixin, UserPassesTestMixin, generic.DeleteView):
+    model = Comment
+    template_name = "delete_comment.html"
+    success_url = reverse_lazy('activity_list')
+
+    def test_func(self):
+        material = self.get_object()
+        return material.athlete == self.request.user

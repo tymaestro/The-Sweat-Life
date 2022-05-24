@@ -44,7 +44,7 @@
 } */
 
 body {
-    background: url('/media/background-image.jpg');
+    background: url('https://res.cloudinary.com/tymaestro/image/upload/v1653393186/background-image_l6vcbw.jpg') no-repeat;
     background-size: cover;
     background-color: azure;
     text-align: center;

@@ -27,7 +27,7 @@ class Activity(models.Model):
 
 
 class Comment(models.Model):
-    athlete = models.ForeignKey(User, on_delete=models.CASCADE, related_name="comments")
+    activity = models.ForeignKey(Activity, on_delete=models.CASCADE, related_name="comments")
     content = models.TextField()
     pub_date = models.DateTimeField(auto_now_add=True)
 
@@ -35,4 +35,4 @@ class Comment(models.Model):
         ordering = ['-pub_date']
 
     def __str__(self):
-        return f"{self.content} by {self.name}"
+        return self.content
