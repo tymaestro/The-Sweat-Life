@@ -1,6 +1,6 @@
 # The Sweat Life
 
-The Sweat Life is a web application that allows users to post activities and interact with other users by liking or commenting on their posts
+The Sweat Life is a web application that allows users to post activities and interact with other users by commenting on their posts.
 
 ## User Stories
 
@@ -64,6 +64,8 @@ As a registered (logged-in) user, I would like to:
 
 ## Flowchart
 
+![The Sweat Life Flowchart](/media/readme/sweatlife-flowchart.png)
+
 ## Wireframes
 
 ## Agile Methodology
@@ -124,9 +126,15 @@ CSS
 
 Django
 
+Github was used for version control to store commit history
+
+Heroku was used to deploy our final project
+
 ## Code Validation
 
 ## Testing
+
+
 
 ## Bug Fixes
 
