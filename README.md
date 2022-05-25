@@ -130,11 +130,17 @@ Github was used for version control to store commit history
 
 Heroku was used to deploy our final project
 
-## Code Validation
-
 ## Testing
 
+### Validator Testing
 
+Python: No errors were returned when passing through the official Pep8 linter.
+
+<hr>
+
+### Testing and debugging code
+
+I have used Docstrings throughout my code to identify each function and its purpose.
 
 ## Bug Fixes
 

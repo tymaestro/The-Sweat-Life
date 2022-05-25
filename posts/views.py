@@ -22,14 +22,14 @@ class ActivityView(generic.DetailView):
     template_name = "activity_detail.html"
 
 
-class CreateActivity(LoginRequiredMixin, generic.CreateView):
+class CreateActivity(generic.CreateView):
     model = Activity
     form_class = ActivityForm
     template_name = "create_activity.html"
 
-    def form_valid(self, form):
-        form.instance.athlete = self.request.user
-        return super().form_valid(form)
+    # def form_valid(self, form):
+    #     form.instance.athlete = self.request.user
+    #     return super().form_valid(form)
 
 
 class UpdateActivity(LoginRequiredMixin, UserPassesTestMixin, generic.UpdateView):
