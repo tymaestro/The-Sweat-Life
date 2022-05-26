@@ -7,13 +7,13 @@
     <div class="card card-body" id="activity-card">
       <p>{{ activity.content }}</p>
       <p class="card-text text-muted h6">{{ activity.athlete }} | {{ activity.pub_date }}</p>
-      {% if user.is_authenticated %}
-        <p class="card-text text-muted h6"><a href="{% url 'update_activity' activity.pk %}">Edit Activity</a></p>
-        <p class="card-text text-muted h6"><a href="{% url 'delete_activity' activity.pk %}">Delete Activity</a></p>
-      {% endif %}
-      <p class="card-text text-muted h6"><a href="{% url 'create_comment' activity.pk %}">Add Comment</a></p>
+      <span class="card-text text-muted h6"><a href="{% url 'create_comment' activity.pk %}" class="btn btn-primary" id="comment-margin">Add Comment</a></span>
     </div>
+    {% if user.is_authenticated %}
+      <span><a href="{% url 'update_activity' activity.pk %}" class="btn btn-primary" id="button-margin">Edit Activity</a></span>
+      <span><a href="{% url 'delete_activity' activity.pk %}" class="btn btn-danger" id="button-margin">Delete Activity</a></span>
+    {% endif %}
   </div>
 </div>
-  <button><a href="{% url 'activity_list' %}">Back</a></button>
+  <button><a href="{% url 'activity_list' %}" class="btn btn-primary">Back</a></button>
 {% endblock %}

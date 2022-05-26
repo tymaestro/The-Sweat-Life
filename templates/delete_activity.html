@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class="container">
-    <div class="col-md-8 mt-3 offset-md-2">
+    <div class="col-md-8 mt-3 offset-md-2" id="activity-card">
         <h1>Delete Activity</h1>
         <h3>Are you sure you want to delete</h3>
         <h3>{{ activity.title }}?</h3>
@@ -10,7 +10,7 @@
             <form method="POST">
                 {% csrf_token %}
                 {{ form.as_p }}
-                <button class="btn btn-primary">Delete!</button>
+                <button class="btn btn-primary" id="button-margin">Delete!</button>
             </form>
         </div>
     </div>

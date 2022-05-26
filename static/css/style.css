@@ -61,3 +61,27 @@ body {
 #activities-position {
     margin-top: 2rem !important;
 }
+
+.header-main-container {
+    min-height: calc(100vh - 89px);
+}
+
+#button-margin {
+    margin: 20px;
+}
+
+#comment-margin {
+    margin: 5px;
+}
+
+#activity-title {
+    text-decoration: none;
+}
+
+#footer {
+    
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 12px;
+}

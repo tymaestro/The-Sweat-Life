@@ -11,7 +11,7 @@
                 <div class="col-sm-4">
                     <div class="card mb-3">
                         <div class="card-body">
-                            <a href="{% url 'activity_detail' activity.pk %}">
+                            <a href="{% url 'activity_detail' activity.pk %}" id="activity-title">
                                 <h2 class="card-title">{{ activity.title }}</h2>
                             </a>
                                 <p class="card-text">{{ activity.excerpt }}</p>
@@ -19,8 +19,8 @@
                             <p class="card-text text-muted h6">{{ activity.athlete }}</p>
                             <p class="card-text text-muted h6">{{ activity.pub_date }}</p>
                             {% if user.is_authenticated %}
-                            <p class="card-text text-muted h6"><a href="{% url 'update_activity' activity.pk %}">Edit Activity</a></p>
-                            <p class="card-text text-muted h6"><a href="{% url 'delete_activity' activity.pk %}">Delete Activity</a></p>
+                            <span><a href="{% url 'update_activity' activity.pk %}" class="btn btn-primary" id="button-margin">Edit Activity</a></span>
+                            <span><a href="{% url 'delete_activity' activity.pk %}" class="btn btn-danger" id="button-margin">Delete Activity</a></span>
                             {% endif %}
                         </div>
                     </div>
