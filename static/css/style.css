@@ -50,6 +50,10 @@ body {
     text-align: center;
 }
 
+h1 {
+    padding: 10px;
+}
+
 #activity-content {
     margin: 30px;
 }
@@ -70,12 +74,31 @@ body {
     margin-top: 170px;
 }
 
+#comment-margin {
+    margin-top: 100px;
+}
+
 #button-margin {
-    margin: 20px;
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#submit-button {
+    margin: 10px;
+}
+
+#update-button {
+    margin-bottom: 20px;
 }
 
 #buttons {
     margin: 5px;
+}
+
+#back-buttons {
+    margin-bottom: 20px;
+    background-color: rgba(253, 248, 241, 0.899);
 }
 
 #activity-title {
