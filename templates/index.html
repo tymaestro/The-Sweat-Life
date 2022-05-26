@@ -9,7 +9,7 @@
             <div class="row">
                 {% for activity in activity_list %}
                 <div class="col-sm-4">
-                    <div class="card mb-3">
+                    <div class="card mb-3" id="activity-card">
                         <div class="card-body">
                             <a href="{% url 'activity_detail' activity.pk %}" id="activity-title">
                                 <h2 class="card-title">{{ activity.title }}</h2>
