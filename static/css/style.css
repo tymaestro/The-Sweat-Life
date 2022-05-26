@@ -66,6 +66,10 @@ body {
     min-height: calc(100vh - 89px);
 }
 
+#delete-margin {
+    margin-top: 170px;
+}
+
 #button-margin {
     margin: 20px;
 }
