@@ -1,9 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Sorry, it's me, not you</h1>
-<p>Let's try again later</p>
-<div>
-    <button><a href="{% url 'activity_list' %}">Back to safety</a></button>
+<div class="container" id="login">
+    <div id="activity-card">
+        <h1>Sorry, it's me, not you</h1>
+        <p>Let's try again later</p>
+        <div>
+            <a href="{% url 'activity_list' %}" class="btn btn-outline-primary" id="activity-button">Back to safety</a>
+        </div>
+    </div>
 </div>
 {% endblock %}

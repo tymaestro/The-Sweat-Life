@@ -1,9 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>That Don't Impress Me Much!</h1>
-<p>This page is forbidden</p>
-<div>
-    <button><a href="{% url 'activity_list' %}">Back to safety</a></button>
+<div class="container" id="login">
+    <div id="activity-card">
+        <h1>That Don't Impress Me Much!</h1>
+        <p>This page is forbidden</p>
+        <div>
+            <a href="{% url 'activity_list' %}" class="btn btn-outline-primary" id="activity-button">Back to safety</a>
+        </div>
+    </div>
 </div>
 {% endblock %}
