@@ -88,6 +88,10 @@ The sign up page allows you to create an account by providing a username and pas
 
 As with the sign up page, the login page allows previously registered users to access the extra functionality that having an account provides.
 
+### Logout Page
+
+The logout page allows you to confirm if you are sure you would like to logout
+
 ### Activities Page
 
 This page presents an ordered and paginated list of activities posted by users. Visible is the title and excerpt of the activity. These activities are public but an account must be created to leave a comment or create your own activities.
@@ -111,6 +115,30 @@ The edit activity page displays your activity as a form, pre-populated with the 
 ### Delete Activity Page
 
 The delete activity page displays a warning (defensive programming) to ensure that you are certain of your choice to delete the chosen activity and are aware of the consequences.
+
+### Edit Comment Page
+
+The edit comment page displays your comment as a form, pre-populated with the content previously provided so that you can edit you comment.
+
+### Delete Comment Page
+
+The delete comment page displays a warning (defensive programming) to ensure that you are certain of your choice to delete the chosen comment and are aware of the consequences.
+
+### 400 Error Page
+
+The 400 error page displays a UX-friendly error message and the option to "return to safety".
+
+### 403 Error Page
+
+The 403 error page displays a UX-friendly error message and the option to "return to safety".
+
+### 404 Error Page
+
+The 404 error page displays a UX-friendly error message and the option to "return to safety".
+
+### 500 Error Page
+
+The 500 error page displays a UX-friendly error message and the option to "return to safety".
 
 ## Features Left To Implement
 
