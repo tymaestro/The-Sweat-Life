@@ -1,5 +1,6 @@
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.views import generic
+from django.db.models import Q
 from django.urls import reverse_lazy
 from .models import Activity, Comment
 from .forms import ActivityForm, CommentForm
@@ -15,6 +16,14 @@ class ActivityList(generic.ListView):
     model = Activity
     template_name = "index.html"
     paginate_by = 6
+
+    # def get_queryset(self):
+    #     query = self.request.GET.get('q')
+    #     if query is not Null:
+    #         results_list = self.model.objects.filter(Q(title__icontains=query) | Q(content__icontains=query))
+    #         return results_list
+    #     else:
+    #         return None
 
 
 class ActivityView(generic.DetailView):
@@ -56,7 +65,6 @@ class CreateComment(generic.CreateView):
     model = Comment
     form_class = CommentForm
     template_name = "create_comment.html"
-    # success_url = reverse_lazy('activity_detail.html')
 
     def form_valid(self, form):
         form.instance.athlete = self.request.user
