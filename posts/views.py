@@ -56,10 +56,12 @@ class CreateComment(generic.CreateView):
     model = Comment
     form_class = CommentForm
     template_name = "create_comment.html"
-    success_url = reverse_lazy('activity_detail.html')
+    # success_url = reverse_lazy('activity_detail.html')
 
     def form_valid(self, form):
         form.instance.athlete = self.request.user
+        form.instance.activity = Activity.objects.get(pk=self.kwargs['pk'])
+        self.success_url = '/activity_detail/' + str(Activity.objects.get(pk=self.kwargs['pk']).pk)
         return super().form_valid(form)
 
 

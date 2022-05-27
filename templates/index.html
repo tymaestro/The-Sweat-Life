@@ -18,7 +18,7 @@
                             <hr />
                             <p class="card-text text-muted h6">{{ activity.athlete }}</p>
                             <p class="card-text text-muted h6">{{ activity.pub_date }}</p>
-                            {% if user.is_authenticated %}
+                            {% if request.user == activity.athlete %}
                             <span><a href="{% url 'update_activity' activity.pk %}" class="btn btn-primary" id="button-margin">Edit Activity</a></span>
                             <span><a href="{% url 'delete_activity' activity.pk %}" class="btn btn-danger" id="button-margin">Delete Activity</a></span>
                             {% endif %}
