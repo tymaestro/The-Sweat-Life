@@ -74,6 +74,21 @@ h1 {
     margin-top: 170px;
 }
 
+#signout {
+    margin-top: 190px;
+    width: 40%;
+}
+
+#login {
+    margin-top: 140px;
+    width: 50%;
+}
+
+#signup {
+    margin-top: 120px;
+    width: 50%;
+}
+
 #comment-margin {
     margin-top: 100px;
 }
@@ -82,6 +97,10 @@ h1 {
     margin-top: 15px;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+#activity-button {
+    margin: 15px;
 }
 
 #submit-button {
@@ -99,6 +118,11 @@ h1 {
 #back-buttons {
     margin-bottom: 20px;
     background-color: rgba(253, 248, 241, 0.899);
+}
+
+#back-buttons:hover {
+    background-color: #007bff;
+    color: rgba(253, 248, 241, 0.899);
 }
 
 #activity-title {
