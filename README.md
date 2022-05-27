@@ -4,6 +4,8 @@ The Sweat Life is a web application that allows users to post activities and int
 
 ## User Stories
 
+### Logged-Out User
+
 As a standard (not logged-in) user, I would like to:
 <br>
 <br>
@@ -19,6 +21,8 @@ As a standard (not logged-in) user, I would like to:
 3. Have a unique sign-up option with username and password
 <br>
 <br>
+
+### Logged-In User
 
 As a registered (logged-in) user, I would like to:
 <br>
@@ -62,6 +66,8 @@ As a registered (logged-in) user, I would like to:
 
 ## Project Goals
 
+
+
 ## Flowchart
 
 ![The Sweat Life Flowchart](/media/readme/sweatlife-flowchart.png)
@@ -95,6 +101,8 @@ As a registered (logged-in) user, I would like to:
 [Sign-Up Phone](/media/readme/wireframes/signup-phone.png)
 
 ## Agile Methodology
+
+
 
 ## Features
 
