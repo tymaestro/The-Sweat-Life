@@ -7,23 +7,26 @@ from .forms import ActivityForm, CommentForm
 
 # Create your views here.
 
-# class IndexView(generic.View):
-#     model = Activity
-#     template_name = "index.html"
+class IndexView(generic.TemplateView):
+    template_name = "index.html"
 
 
 class ActivityList(generic.ListView):
     model = Activity
-    template_name = "index.html"
+    template_name = "activities.html"
     paginate_by = 6
 
-    # def get_queryset(self):
-    #     query = self.request.GET.get('q')
-    #     if query is not Null:
-    #         results_list = self.model.objects.filter(Q(title__icontains=query) | Q(content__icontains=query))
-    #         return results_list
-    #     else:
-    #         return None
+    def get_queryset(self):
+        query = self.request.GET.get('q')
+        if query is not None:
+            results_list = self.model.objects.filter(
+                Q(title__icontains=query) |
+                Q(content__icontains=query) |
+                Q(excerpt__icontains=query)
+                )
+            return results_list
+        else:
+            return self.model.objects.all()
 
 
 class ActivityView(generic.DetailView):

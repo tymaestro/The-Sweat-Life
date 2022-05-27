@@ -13,7 +13,7 @@ h1 {
     margin: 30px;
 }
 
-#activity-card {
+[id*="activity-card"] {
     background-color: rgba(253, 248, 241, 0.899);
 }
 
