@@ -22,7 +22,7 @@ class ActivityView(generic.DetailView):
     template_name = "activity_detail.html"
 
 
-class CreateActivity(generic.CreateView):
+class CreateActivity(LoginRequiredMixin, generic.CreateView):
     model = Activity
     form_class = ActivityForm
     template_name = "create_activity.html"

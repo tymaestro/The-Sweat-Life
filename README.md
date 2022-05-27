@@ -68,6 +68,8 @@ As a registered (logged-in) user, I would like to:
 
 ## Wireframes
 
+[Activity List Web](/media/readme/wireframes/activity-list-ipad.png)
+
 ## Agile Methodology
 
 ## Features
