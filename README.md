@@ -68,7 +68,31 @@ As a registered (logged-in) user, I would like to:
 
 ## Wireframes
 
-[Activity List Web](/media/readme/wireframes/activity-list-ipad.png)
+[Activity List Web](/media/readme/wireframes/activity-list-web.png)
+
+[Activity List iPad](/media/readme/wireframes/activity-list-ipad.png)
+
+[Activity List Phone](/media/readme/wireframes/activity-list-phone.png)
+
+[Activity Detail Web](/media/readme/wireframes/activity-detail-web.png)
+
+[Comment Web](/media/readme/wireframes/comment-web.png)
+
+[Comment iPad](/media/readme/wireframes/comment-ipad.png)
+
+[Comment Phone](/media/readme/wireframes/comment-phone.png)
+
+[Create Activity Web](/media/readme/wireframes/create-activity-web.png)
+
+[Create Activity iPad](/media/readme/wireframes/create-activity-ipad.png)
+
+[Create Activity Phone](/media/readme/wireframes/create-activity-phone.png)
+
+[Sign-Up Web](/media/readme/wireframes/signup-web.png)
+
+[Sign-Up iPad](/media/readme/wireframes/signup-ipad.png)
+
+[Sign-Up Phone](/media/readme/wireframes/signup-phone.png)
 
 ## Agile Methodology
 
