@@ -15,6 +15,7 @@ h1 {
 
 [id*="activity-card"] {
     background-color: rgba(253, 248, 241, 0.899);
+    height: 100%;
 }
 
 #activities-position {
