@@ -5,18 +5,23 @@
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 
 {% block content %}
+
 <div class="container" id="signup">
   <div id="activity-card">
+
+    <!-- Sign-Up message and link to login option -->
     <div class="row">
       <div class="col-md-8 mt-3 offset-md-2">
         <h3>{% trans "Sign Up" %}</h3>
-
         <p>{% blocktrans %}Welcome to The Sweat Life! Do you already have an account? Then please <a class="link"
             href="{{ login_url }}">sign in</a> instead.{% endblocktrans %}</p>
       </div>
     </div>
+
     <div class="row">
       <div class="col-md-8 mt-3 offset-md-2">
+
+        <!-- Sign-Up Form -->
         <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
           {% csrf_token %}
           {{ form.as_p }}
@@ -26,8 +31,10 @@
           <button class="btn btn-outline-success" id="activity-button" type="submit">{% trans "Sign Up" %}
             &raquo;</button>
         </form>
+
       </div>
     </div>
+
   </div>
 </div>
 

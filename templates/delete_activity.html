@@ -1,18 +1,23 @@
 {% extends "base.html" %}
 
 {% block content %}
+
 <div class="container" id="delete-margin">
     <div class="col-md-8 mt-3 offset-md-2" id="activity-card">
         <h1>Delete Activity</h1>
         <h3>Are you sure you want to delete</h3>
         <h3>{{ activity.title }}?</h3>
         <div>
+
+            <!-- Delete Activity Section -->
             <form method="POST">
                 {% csrf_token %}
                 {{ form.as_p }}
                 <button class="btn btn-danger" id="activity-button">Delete!</button>
             </form>
+
         </div>
     </div>
 </div>
+
 {% endblock %}

@@ -1,15 +1,22 @@
 {% extends "base.html" %}
 
 {% block content %}
+
 <div class="container">
   <div id="activity-content">
+
+    <!-- Activity Detail -->
     <div class="card card-body" id="activity-card">
       <h1>{{ activity.title }}</h1>
       <hr>
       <p>{{ activity.content }}</p>
       <p class="card-text text-muted h6">{{ activity.athlete }} | {{ activity.pub_date }}</p>
+
+      <!-- Add Comment Option -->
       <span class="card-text text-muted h6"><a href="{% url 'create_comment' activity.pk %}" class="btn btn-primary"
           id="buttons">Add Comment</a></span>
+
+      <!-- User-specific edit and delete functionality -->
       {% if request.user == activity.athlete %}
       <div>
         <span><a href="{% url 'update_activity' activity.pk %}" class="btn btn-primary" id="edit-button-margin">Edit
@@ -18,18 +25,26 @@
             Activity</a></span>
       </div>
       {% endif %}
+
     </div>
   </div>
+
   <div id="comment-content">
     <div class="card card-title" id="comment-card">
       <h1>Comments</h1>
+
+      <!-- Comment Iteration -->
       {% for comment in activity.comments.all %}
       <p>{{ comment.content }}</p>
       <p>{{ comment.pub_date }}</p>
       <hr>
       {% endfor %}
+
     </div>
   </div>
 </div>
+
+<!-- Back Button -->
 <a href="{% url 'activities' %}" class="btn btn-outline-primary" id="back-buttons">Back</a>
+
 {% endblock %}

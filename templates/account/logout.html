@@ -5,18 +5,22 @@
 {% block head_title %}{% trans "Sign Out" %}{% endblock %}
 
 {% block content %}
+
 <div class="container" id="signout">
   <div id="activity-card">
+
+    <!-- Sign-Out Confirmation Message -->
     <div class="row">
       <div class="col-md-8 mt-3 offset-md-2">
         <h3>{% trans "Sign Out" %}</h3>
-
         <p>{% trans 'Are you sure you want to sign out?' %}</p>
       </div>
     </div>
+
     <div class="row">
       <div class="col-md-8 mt-3 offset-md-2">
 
+        <!-- Logout Form -->
         <form method="post" action="{% url 'account_logout' %}">
           {% csrf_token %}
           {% if redirect_field_value %}
@@ -26,6 +30,8 @@
         </form>
       </div>
     </div>
+
   </div>
 </div>
+
 {% endblock %}
