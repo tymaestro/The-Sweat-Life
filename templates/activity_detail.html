@@ -8,13 +8,16 @@
       <hr>
       <p>{{ activity.content }}</p>
       <p class="card-text text-muted h6">{{ activity.athlete }} | {{ activity.pub_date }}</p>
-      <span class="card-text text-muted h6"><a href="{% url 'create_comment' activity.pk %}" class="btn btn-primary" id="buttons">Add Comment</a></span>
+      <span class="card-text text-muted h6"><a href="{% url 'create_comment' activity.pk %}" class="btn btn-primary"
+          id="buttons">Add Comment</a></span>
       {% if request.user == activity.athlete %}
       <div>
-        <span><a href="{% url 'update_activity' activity.pk %}" class="btn btn-primary" id="edit-button-margin">Edit Activity</a></span>
-        <span><a href="{% url 'delete_activity' activity.pk %}" class="btn btn-danger" id="delete-button-margin">Delete Activity</a></span>
+        <span><a href="{% url 'update_activity' activity.pk %}" class="btn btn-primary" id="edit-button-margin">Edit
+            Activity</a></span>
+        <span><a href="{% url 'delete_activity' activity.pk %}" class="btn btn-danger" id="delete-button-margin">Delete
+            Activity</a></span>
       </div>
-    {% endif %}
+      {% endif %}
     </div>
   </div>
   <div id="comment-content">
@@ -28,5 +31,5 @@
     </div>
   </div>
 </div>
-  <a href="{% url 'activities' %}" class="btn btn-outline-primary" id="back-buttons">Back</a>
+<a href="{% url 'activities' %}" class="btn btn-outline-primary" id="back-buttons">Back</a>
 {% endblock %}
