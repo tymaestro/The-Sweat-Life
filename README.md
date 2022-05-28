@@ -66,7 +66,7 @@ As a registered (logged-in) user, I would like to:
 
 ## Project Goals
 
-
+- Create a platform for exercise enthusiasts to come together and share their activities and passion for exercise and the outdoors. This will be achieved through CRUD functionality to create activities (with the ability to both edit and delete the chosen activity) that allow for other users to comment and interact with fellow users of the site.
 
 ## Flowchart
 
@@ -102,7 +102,7 @@ As a registered (logged-in) user, I would like to:
 
 ## Agile Methodology
 
-
+The agile development of this project used issues in the project environment on [Github](https://github.com/tymaestro/PP4/projects/1)
 
 ## Features
 
@@ -174,14 +174,6 @@ The delete activity page displays a warning (defensive programming) to ensure th
 
 ![Delete Activity Page](/media/readme/delete-activity-page.png)
 
-### Edit Comment Page
-
-The edit comment page displays your comment as a form, pre-populated with the content previously provided so that you can edit you comment.
-
-### Delete Comment Page
-
-The delete comment page displays a warning (defensive programming) to ensure that you are certain of your choice to delete the chosen comment and are aware of the consequences.
-
 ### 400 Error Page
 
 The 400 error page displays a UX-friendly error message and the option to "return to safety".
@@ -202,7 +194,9 @@ The 500 error page displays a UX-friendly error message and the option to "retur
 
 ## Features Left To Implement
 
-Add a calendar so that users can organise meet ups to exercise or explore nature in a group setting. This adds to the social aspect of this web application and encourages users to engage with others during their activities.
+- Add a calendar so that users can organise meet ups to exercise or explore nature in a group setting. This adds to the social aspect of this web application and encourages users to engage with others during their activities.
+
+- Add functionality to delete comments
 
 ## Languages Used
 
@@ -225,8 +219,6 @@ Heroku was used to deploy our final project
 ### Validator Testing
 
 Python: No errors were returned when passing through the official Pep8 linter.
-
-
 
 <hr>
 
