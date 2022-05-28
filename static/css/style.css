@@ -111,6 +111,26 @@ h1 {
     color: rgba(253, 248, 241, 0.899);
 }
 
+#previous-button {
+    margin-bottom: 20px;
+    background-color: rgba(253, 248, 241, 0.899);
+}
+
+#previous-button:hover {
+    background-color: #007bff;
+    color: rgba(253, 248, 241, 0.899);
+}
+
+#next-button {
+    margin-bottom: 20px;
+    background-color: rgba(253, 248, 241, 0.899);
+}
+
+#next-button:hover {
+    background-color: #007bff;
+    color: rgba(253, 248, 241, 0.899);
+}
+
 [id*="activity-title"] {
     text-decoration: none;
 }
