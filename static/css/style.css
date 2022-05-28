@@ -68,6 +68,7 @@ h1 {
 #comment-card {
     background-color: rgba(253, 248, 241, 0.899);
     height: 98%;
+    padding: 20px;
 }
 
 #comment-margin {
@@ -159,6 +160,14 @@ h1 {
 #next-button {
     margin-bottom: 20px;
     background-color: rgba(253, 248, 241, 0.899);
+}
+
+[id*="list-edit-buttons"] {
+    margin: 5px;
+}
+
+[id*="list-delete-buttons"] {
+    margin: 5px;
 }
 
 #next-button:hover {

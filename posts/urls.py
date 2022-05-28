@@ -31,14 +31,4 @@ urlpatterns = [
         views.CreateComment.as_view(),
         name='create_comment'
         ),
-    path(
-        'update_comment/<int:pk>',
-        views.UpdateComment.as_view(),
-        name='update_comment'
-        ),
-    path(
-        'delete_comment/<int:pk>',
-        views.DeleteComment.as_view(),
-        name='delete_comment'
-        ),
 ]

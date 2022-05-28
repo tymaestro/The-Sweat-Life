@@ -33,9 +33,9 @@
                             <!-- User-specific edit and delete functionality -->
                             {% if request.user == activity.athlete %}
                             <span><a href="{% url 'update_activity' activity.pk %}"
-                                    class="btn btn-primary button-margin">Edit Activity</a></span>
+                                    class="btn btn-primary" id="list-edit-buttons-{{ activity.pk }}">Edit Activity</a></span>
                             <span><a href="{% url 'delete_activity' activity.pk %}"
-                                    class="btn btn-danger button-margin">Delete Activity</a></span>
+                                    class="btn btn-danger" id="list-delete-buttons-{{ activity.pk }}">Delete Activity</a></span>
                             {% endif %}
 
                         </div>
