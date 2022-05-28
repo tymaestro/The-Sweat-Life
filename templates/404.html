@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container" id="login">
+<div class="container" id="error">
     <div id="activity-card">
         <h1>You Seem Lost</h1>
         <p>404 Error</p>
@@ -9,7 +9,7 @@
         <p>What's the difference between you and the Talking Heads?</p>
         <p>Nothing, you're both on the road to nowhere</p>
         <div>
-            <a href="{% url 'activities' %}" class="btn btn-outline-primary" id="activity-button">Back to safety</a>
+            <a href="{% url 'activities' %}" class="btn btn-outline-primary" id="error-button">Back to safety</a>
         </div>
     </div>
 </div>

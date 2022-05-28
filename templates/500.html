@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container" id="login">
+<div class="container" id="error">
     <div id="activity-card">
         <h1>Sorry, it's me, not you</h1>
         <p>500 Error</p>
         <p>Let's try again later</p>
         <div>
-            <a href="{% url 'activities' %}" class="btn btn-outline-primary" id="activity-button">Back to safety</a>
+            <a href="{% url 'activities' %}" class="btn btn-outline-primary" id="error-button">Back to safety</a>
         </div>
     </div>
 </div>
