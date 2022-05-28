@@ -22,7 +22,7 @@ class Activity(models.Model):
         return self.title
 
     def get_absolute_url(self):
-        return reverse('activity_list')
+        return reverse('activities')
 
 
 class Comment(models.Model):

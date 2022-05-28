@@ -210,6 +210,8 @@ Python 3.0
 
 CSS
 
+HTML
+
 ## Libraries, Frameworks, and Programs Used
 
 Django

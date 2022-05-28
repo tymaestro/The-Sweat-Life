@@ -18,10 +18,10 @@
     <div class="card card-title" id="activity-card">
       <h1>Comments</h1>
       {% for comment in activity.comments.all %}
-      <p>{{ comment.pub_date }}</p>
       <p>{{ comment.content }}</p>
+      <p>{{ comment.pub_date }}</p>
       <hr>
-    {% endfor %}
+      {% endfor %}
     </div>
   </div>
 </div>

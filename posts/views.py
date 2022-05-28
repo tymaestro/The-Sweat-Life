@@ -57,7 +57,7 @@ class UpdateActivity(LoginRequiredMixin, UserPassesTestMixin, generic.UpdateView
 class DeleteActivity(LoginRequiredMixin, UserPassesTestMixin, generic.DeleteView):
     model = Activity
     template_name = "delete_activity.html"
-    success_url = reverse_lazy('activity_list')
+    success_url = reverse_lazy('activities')
 
     def test_func(self):
         material = self.get_object()
@@ -89,7 +89,7 @@ class UpdateComment(LoginRequiredMixin, UserPassesTestMixin, generic.UpdateView)
 class DeleteComment(LoginRequiredMixin, UserPassesTestMixin, generic.DeleteView):
     model = Comment
     template_name = "delete_comment.html"
-    success_url = reverse_lazy('activity_list')
+    success_url = reverse_lazy('activities')
 
     def test_func(self):
         material = self.get_object()
