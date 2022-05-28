@@ -12,12 +12,12 @@
       <span class="card-text text-muted h6"><a href="{% url 'create_comment' activity.pk %}" class="btn btn-primary" id="buttons">Add Comment</a></span>
     </div>
     {% if request.user == activity.athlete %}
-      <span><a href="{% url 'update_activity' activity.pk %}" class="btn btn-primary" id="button-margin">Edit Activity</a></span>
-      <span><a href="{% url 'delete_activity' activity.pk %}" class="btn btn-danger" id="button-margin">Delete Activity</a></span>
+      <span><a href="{% url 'update_activity' activity.pk %}" class="btn btn-primary" id="edit-button-margin">Edit Activity</a></span>
+      <span><a href="{% url 'delete_activity' activity.pk %}" class="btn btn-danger" id="delete-button-margin">Delete Activity</a></span>
     {% endif %}
   </div>
-  <div id="activity-content">
-    <div class="card card-title" id="activity-card">
+  <div id="comment-content">
+    <div class="card card-title" id="comment-card">
       <h1>Comments</h1>
       {% for comment in activity.comments.all %}
       <p>{{ comment.content }}</p>

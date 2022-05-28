@@ -5,7 +5,6 @@ from django.urls import reverse_lazy
 from .models import Activity, Comment
 from .forms import ActivityForm, CommentForm
 
-# Create your views here.
 
 class IndexView(generic.TemplateView):
     template_name = "index.html"
@@ -72,7 +71,9 @@ class CreateComment(generic.CreateView):
     def form_valid(self, form):
         form.instance.athlete = self.request.user
         form.instance.activity = Activity.objects.get(pk=self.kwargs['pk'])
-        self.success_url = '/activity_detail/' + str(Activity.objects.get(pk=self.kwargs['pk']).pk)
+        self.success_url = '/activity_detail/' + str(
+            Activity.objects.get(pk=self.kwargs['pk']).pk
+            )
         return super().form_valid(form)
 
 

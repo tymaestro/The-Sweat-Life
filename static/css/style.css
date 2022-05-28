@@ -13,7 +13,16 @@ h1 {
     margin: 30px;
 }
 
+#comment-content {
+    margin: 30px;
+}
+
 [id*="activity-card"] {
+    background-color: rgba(253, 248, 241, 0.899);
+    height: 98%;
+}
+
+#comment-card {
     background-color: rgba(253, 248, 241, 0.899);
     height: 98%;
 }
@@ -55,7 +64,13 @@ h1 {
     margin-top: 100px;
 }
 
-#button-margin {
+#edit-button-margin {
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#delete-button-margin {
     margin-top: 15px;
     margin-left: 5px;
     margin-right: 5px;
@@ -87,7 +102,7 @@ h1 {
     color: rgba(253, 248, 241, 0.899);
 }
 
-#activity-title {
+[id*="activity-title"] {
     text-decoration: none;
 }
 
