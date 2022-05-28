@@ -54,6 +54,12 @@ h1 {
     width: 50%;
 }
 
+#dismiss-button {
+    color: #d4edda;
+    background-color: #d4edda;
+    border: none;
+}
+
 #error {
     margin-top: 140px;
     width: 50%;
