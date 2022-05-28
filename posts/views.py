@@ -1,3 +1,4 @@
+""" Modules """
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.views import generic
 from django.db.models import Q
@@ -7,10 +8,12 @@ from .forms import ActivityForm, CommentForm
 
 
 class IndexView(generic.TemplateView):
+    """ Renders homepage view """
     template_name = "index.html"
 
 
 class ActivityList(generic.ListView):
+    """ Renders activities view """
     model = Activity
     template_name = "activities.html"
     paginate_by = 6
@@ -29,11 +32,13 @@ class ActivityList(generic.ListView):
 
 
 class ActivityView(generic.DetailView):
+    """ Renders activity detail view """
     model = Activity
     template_name = "activity_detail.html"
 
 
 class CreateActivity(LoginRequiredMixin, generic.CreateView):
+    """ Renders create activity view """
     model = Activity
     form_class = ActivityForm
     template_name = "create_activity.html"
@@ -44,6 +49,7 @@ class CreateActivity(LoginRequiredMixin, generic.CreateView):
 
 
 class UpdateActivity(LoginRequiredMixin, UserPassesTestMixin, generic.UpdateView):
+    """ Renders update activity view """
     model = Activity
     template_name = "update_activity.html"
     fields = ('title', 'content', 'excerpt')
@@ -54,6 +60,7 @@ class UpdateActivity(LoginRequiredMixin, UserPassesTestMixin, generic.UpdateView
 
 
 class DeleteActivity(LoginRequiredMixin, UserPassesTestMixin, generic.DeleteView):
+    """ Renders delete activity view """
     model = Activity
     template_name = "delete_activity.html"
     success_url = reverse_lazy('activities')
@@ -64,6 +71,7 @@ class DeleteActivity(LoginRequiredMixin, UserPassesTestMixin, generic.DeleteView
 
 
 class CreateComment(generic.CreateView):
+    """ Renders create comment view """
     model = Comment
     form_class = CommentForm
     template_name = "create_comment.html"
@@ -75,23 +83,3 @@ class CreateComment(generic.CreateView):
             Activity.objects.get(pk=self.kwargs['pk']).pk
             )
         return super().form_valid(form)
-
-
-class UpdateComment(LoginRequiredMixin, UserPassesTestMixin, generic.UpdateView):
-    model = Comment
-    template_name = "update_comment.html"
-    fields = ('content',)
-
-    def test_func(self):
-        material = self.get_object()
-        return material.athlete == self.request.user
-
-
-class DeleteComment(LoginRequiredMixin, UserPassesTestMixin, generic.DeleteView):
-    model = Comment
-    template_name = "delete_comment.html"
-    success_url = reverse_lazy('activities')
-
-    def test_func(self):
-        material = self.get_object()
-        return material.athlete == self.request.user

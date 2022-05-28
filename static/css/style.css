@@ -1,3 +1,5 @@
+/* Body Styling */
+
 body {
     background: url('https://res.cloudinary.com/tymaestro/image/upload/v1653393186/background-image_l6vcbw.jpg') no-repeat;
     background-size: cover;
@@ -5,15 +7,28 @@ body {
     text-align: center;
 }
 
+/* h1 Styling */
+
 h1 {
     padding: 10px;
 }
 
-#activity-content {
-    margin: 30px;
+/* Container Styling */
+
+.header-main-container {
+    min-height: calc(100vh - 89px);
 }
 
-#comment-content {
+/* Home Page Styling */
+
+#home-page {
+    margin-top: 140px;
+    width: 50%;
+}
+
+/* Activity Pages Styling */
+
+#activity-content {
     margin: 30px;
 }
 
@@ -22,53 +37,15 @@ h1 {
     height: 98%;
 }
 
-#comment-card {
-    background-color: rgba(253, 248, 241, 0.899);
-    height: 98%;
+[id*="activity-title"] {
+    text-decoration: none;
 }
 
 #activities-position {
     margin-top: 2rem !important;
 }
 
-.header-main-container {
-    min-height: calc(100vh - 89px);
-}
-
-#delete-margin {
-    margin-top: 170px;
-}
-
-#signout {
-    margin-top: 190px;
-    width: 40%;
-}
-
-#login {
-    margin-top: 140px;
-    width: 50%;
-}
-
-#home-page {
-    margin-top: 140px;
-    width: 50%;
-}
-
-#dismiss-button {
-    color: #d4edda;
-    background-color: #d4edda;
-    border: none;
-}
-
-#error {
-    margin-top: 140px;
-    width: 50%;
-}
-
-#signup {
-    margin-top: 120px;
-    width: 50%;
-}
+/* Search Form Styling */
 
 #search-form {
     margin-top: 15px;
@@ -76,9 +53,56 @@ h1 {
     justify-content: flex-end;
 }
 
+/* Delete Activity Page Styling */
+
+#delete-margin {
+    margin-top: 170px;
+}
+
+/* Create Comment Page Styling */
+
+#comment-content {
+    margin: 30px;
+}
+
+#comment-card {
+    background-color: rgba(253, 248, 241, 0.899);
+    height: 98%;
+}
+
 #comment-margin {
     margin-top: 100px;
 }
+
+/* Sign-Up Page Styling */
+
+#signup {
+    margin-top: 120px;
+    width: 50%;
+}
+
+/* Login Page Styling */
+
+#login {
+    margin-top: 140px;
+    width: 50%;
+}
+
+/* Sign-Out Page Styling */
+
+#signout {
+    margin-top: 190px;
+    width: 40%;
+}
+
+/* Error Pages Styling */
+
+#error {
+    margin-top: 140px;
+    width: 50%;
+}
+
+/* Buttons Styling */
 
 #edit-button-margin {
     margin-top: 15px;
@@ -142,9 +166,13 @@ h1 {
     color: rgba(253, 248, 241, 0.899);
 }
 
-[id*="activity-title"] {
-    text-decoration: none;
+#dismiss-button {
+    color: #d4edda;
+    background-color: #d4edda;
+    border: none;
 }
+
+/* Footer Styling */
 
 #footer {
     

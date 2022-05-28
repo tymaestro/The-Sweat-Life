@@ -1,9 +1,12 @@
+""" Modules """
 from django import forms
 from .models import Activity, Comment
 
 
 class ActivityForm(forms.ModelForm):
+    """ Creates Activity Form """
     class Meta:
+        """ Model, Fields, and Widgets for ActivityForm """
         model = Activity
         fields = ('title', 'content', 'excerpt')
 
@@ -15,7 +18,9 @@ class ActivityForm(forms.ModelForm):
 
 
 class CommentForm(forms.ModelForm):
+    """ Creates Comment Form """
     class Meta:
+        """ Model, Fields, and Widgets for CommentForm """
         model = Comment
         fields = ('content',)
 

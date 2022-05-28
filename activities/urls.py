@@ -1,4 +1,5 @@
-"""activities URL Configuration
+"""
+activities URL Configuration
 
 The `urlpatterns` list routes URLs to views.
 """
