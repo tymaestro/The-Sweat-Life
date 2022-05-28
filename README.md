@@ -208,17 +208,25 @@ HTML
 
 ## Libraries, Frameworks, and Programs Used
 
-Django
+Django.
 
-Github was used for version control to store commit history
+Github was used for version control to store commit history.
 
-Heroku was used to deploy our final project
+Heroku was used to deploy our final project.
+
+Balsamiq was used for wireframes.
+
+FontAwesome for social media icons in footer.
 
 ## Testing
 
 ### Validator Testing
 
-Python: No errors were returned when passing through the official Pep8 linter.
+Python: No errors were returned when passing through the official [Pep8](http://pep8online.com/) linter.
+
+HTML: No errors were returned when passing through the official [W3C](https://validator.w3.org/) validator.
+
+CSS: No errors were returned when passing through the official [Jigsaw](https://jigsaw.w3.org/css-validator/) validator.
 
 <hr>
 
