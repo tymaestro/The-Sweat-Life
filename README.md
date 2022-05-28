@@ -276,8 +276,18 @@ Using the CLI, enter the following commands to deploy to Heroku
 
 ## Credits
 
-Images etc.
+[Cloudinary](https://cloudinary.com/) for cloud storage of images.
+
+[Pexels](https://www.pexels.com/) to find and download images.
+
+[Codemy](https://www.youtube.com/c/Codemycom) for simplified views structure.
 
 ## Acknowledgements
 
-Daisy/Slack/Stack Overflow etc.
+A very big thank you to my mentor Daisy McGirr who gave me very helpful feedback and was very encouraging during our mentor sessions.
+
+Also, a big thank you to the Slack community over the course of this entire module.
+
+Stack Overflow for any troubleshooting over the course of this project.
+
+Django documentation for setup, use of allauth and insight into class-based views and forms.
