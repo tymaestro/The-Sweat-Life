@@ -222,13 +222,49 @@ FontAwesome for social media icons in footer.
 
 ### Validator Testing
 
-Python: No errors were returned when passing through the official [Pep8](http://pep8online.com/) linter.
+Python: Several "line too long" errors were returned when passing through the official [Pep8](http://pep8online.com/) linter.
+
+These refer to:
+
+- In settings.py there are 5 "line too long" errors related to Django's AUTH_PASSWORD_VALIDATORS and Cloudinary storage.
+
+- In views.py there are 2 "line too long" errors related to Django MixIn imports.
 
 HTML: No errors were returned when passing through the official [W3C](https://validator.w3.org/) validator.
 
 CSS: No errors were returned when passing through the official [Jigsaw](https://jigsaw.w3.org/css-validator/) validator.
 
 <hr>
+
+### HTML Validation
+
+[Index Page](/media/readme/htmlvalidation/index-valid.png)
+
+[400 Error Page](/media/readme/htmlvalidation/400-error-valid.png)
+
+[403 Error Page](/media/readme/htmlvalidation/403-error-valid.png)
+
+[404 Error Page](/media/readme/htmlvalidation/404-error-valid.png)
+
+[500 Error Page](/media/readme/htmlvalidation/500-error-valid.png)
+
+[Activities Page](/media/readme/htmlvalidation/activities-valid.png)
+
+[Activity Detail Page](/media/readme/htmlvalidation/activity-detail-valid.png)
+
+[Create Activity Page](/media/readme/htmlvalidation/create-activity-valid.png)
+
+[Create Comment Page](/media/readme/htmlvalidation/create-comment-valid.png)
+
+[Delete Activity Page](/media/readme/htmlvalidation/delete-activity-valid.png)
+
+[Login Page](/media/readme/htmlvalidation/login-valid.png)
+
+[Logout Page](/media/readme/htmlvalidation/logout-valid.png)
+
+[Sign-In Page](/media/readme/htmlvalidation/sign-in-valid.png)
+
+[Update Activity Page](/media/readme/htmlvalidation/update-activity-valid.png)
 
 ### Testing and debugging code
 
