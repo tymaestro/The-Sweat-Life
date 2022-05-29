@@ -2,6 +2,8 @@
 
 The Sweat Life is a web application that allows users to post activities and interact with other users by commenting on their posts.
 
+[Responsive Pages](/media/readme/features/responsive-pp4.png)
+
 ## User Stories
 <br>
 
