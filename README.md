@@ -266,6 +266,44 @@ CSS: No errors were returned when passing through the official [Jigsaw](https://
 
 [Update Activity Page](/media/readme/htmlvalidation/update-activity-valid.png)
 
+<hr>
+
+### CSS Validation
+
+[CSS Page](/media/readme/cssvalidation/css-valid.png)
+
+<hr>
+
+### Python Validation
+
+#### Activities Project
+
+[Activities URLS Page](/media/readme/pythonvalidation/activities-urls-valid.png)
+
+[Activities ASGI Page](/media/readme/pythonvalidation/asgi-valid.png)
+
+[Activities Settings Page](/media/readme/pythonvalidation/settings-valid.png)
+
+[Activities WSGI Page](/media/readme/pythonvalidation/wsgi-valid.png)
+
+<hr>
+
+#### Posts App
+
+[Posts Admin Page](/media/readme/pythonvalidation/admin-valid.png)
+
+[Posts Apps Page](/media/readme/pythonvalidation/apps-valid.png)
+
+[Posts Forms Page](/media/readme/pythonvalidation/forms-valid.png)
+
+[Posts Models Page](/media/readme/pythonvalidation/models-valid.png)
+
+[Posts URLS Page](/media/readme/pythonvalidation/posts-urls-valid.png)
+
+[Posts Views Page](/media/readme/pythonvalidation/views-valid.png)
+
+<hr>
+
 ### Testing and debugging code
 
 I have used Docstrings throughout my code to identify each function and its purpose.
