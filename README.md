@@ -322,9 +322,55 @@ I have used Docstrings throughout my code to identify each function and its purp
 | 5     | Click the Logout button on the navbar          | Directed to the logout page                                       | Successful   |
 
 
-### Activities Page
+### Activities Page (logged-out)
 <br>
 
+| Tests | Description                        | Expected Result                                  | Final Result |
+|-------|------------------------------------|--------------------------------------------------|--------------|
+| 1     | Select an activity                 | Directed to the activity detail page             | Successful   |
+| 2     | Search an activity using a keyword | Only activities with the selected keyword appear | Successful   |
+| 3     | Click next and previous buttons    | Navigated to next page of activities             | Successful   |
+
+
+### Activities Page (logged-in)
+<br>
+
+| Tests | Description                        | Expected Result                                  | Final Result |
+|-------|------------------------------------|--------------------------------------------------|--------------|
+| 1     | Select an activity                 | Directed to the activity detail page             | Successful   |
+| 2     | Search an activity using a keyword | Only activities with the selected keyword appear | Successful   |
+| 3     | Click next and previous buttons    | Navigated to next page of activities             | Successful   |
+| 4     | Click edit activity button         | Navigated to edit activity page                  | Successful   |
+| 5     | Click delete activity button       | Navigated to delete activity page                | Successful   |
+
+
+### Activity Detail Page (logged-out)
+<br>
+
+| Tests | Description              | Expected Result                 | Final Result |
+|-------|--------------------------|---------------------------------|--------------|
+| 1     | Click Add Comment button | Directed to add comment page    | Successful   |
+| 2     | Click Back button        | Directed to the activities page | Successful   |
+
+
+### Activity Detail Page (logged-in)
+<br>
+
+| Tests | Description                      | Expected Result                      | Final Result |
+|-------|----------------------------------|--------------------------------------|--------------|
+| 1     | Click Add Comment button         | Directed to add comment page         | Successful   |
+| 2     | Click Back button                | Directed to the activities page      | Successful   |
+| 3     | Click the Edit Activity button   | Directed to the edit activity page   | Successful   |
+| 4     | Click the Delete Activity button | Directed to the delete activity page | Successful   |
+
+
+### Create Activity Page
+<br>
+
+| Tests | Description                                                            | Expected Result                                   | Final Result |
+|-------|------------------------------------------------------------------------|---------------------------------------------------|--------------|
+| 1     | Click Post button without filling in required title and content fields | Notified to fill in required fields               | Successful   |
+| 2     | Click Post button with required fields filled                          | Directed to updated Activities page with new post | Successful   |
 
 
 ## Bug Fixes
