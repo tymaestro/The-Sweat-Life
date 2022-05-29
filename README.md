@@ -134,13 +134,21 @@ The logout page allows you to confirm if you are sure you would like to logout
 
 ![Logout Page](/media/readme/features/sign-out-page.png)
 
+### Home Page
+
+The home page welcomes users to the site and gives information on the concept behind the site and encourages you to sign-up to gain access to cool features where you can post your own activities and comment on the posts of other users.
+
+![Home Page]()
+
 ### Activities Page
 
-This page presents an ordered and paginated list of activities posted by users. Visible is the title and excerpt of the activity. These activities are public but an account must be created to leave a comment or create your own activities.
+This page presents an ordered and paginated list of activities posted by users. Visible is the title and excerpt of the activity. These activities are public but an account must be created to leave a comment or create your own activities. You can also search for a specific activity using the search bar at the top right of the page.
 
 ![Activities Page (logged-out)](/media/readme/features/activities-logged-out.png)
 
 ### Activities Page (logged-in)
+
+Note that the extra functionality such as edit and delete are user-specific so the buttons only display on the posts the user has created themselves and not the posts of others.
 
 ![Activities Page (logged-in)](/media/readme/features/activities-logged-in.png)
 
@@ -362,7 +370,7 @@ Using the CLI, enter the following commands to deploy to Heroku
 
 [Pexels](https://www.pexels.com/) to find and download images.
 
-[Codemy](https://www.youtube.com/c/Codemycom) for simplified views structure.
+[Codemy](https://www.youtube.com/c/Codemycom) for a better understanding of a simplified views structure.
 
 ## Acknowledgements
 
