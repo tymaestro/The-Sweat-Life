@@ -298,6 +298,9 @@ CSS: No errors were returned when passing through the official [Jigsaw](https://
 I have used Docstrings throughout my code to identify each function and its purpose.
 <br>
 
+### Navbar (logged-out)
+<br>
+
 | Tests | Description                               | Expected Result                 | Final Result |
 |-------|-------------------------------------------|---------------------------------|--------------|
 | 1     | Click The Sweat Life title on the navbar  | Directed to the home page       | Successful   |
@@ -305,9 +308,23 @@ I have used Docstrings throughout my code to identify each function and its purp
 | 3     | Click the Activities button on the navbar | Directed to the Activities page | Successful   |
 | 4     | Click the Login button on the navbar      | Directed to the login page      | Successful   |
 | 5     | Click the Sign\-Up button on the navbar   | Directed to the sign\-up page   | Successful   |
-| 6     |                                           |                                 |              |
-| 7     |                                           |                                 |              |
-|       |                                           |                                 |              |
+
+
+### Navbar (logged-in)
+<br>
+
+| Tests | Description                                    | Expected Result                                                   | Final Result |
+|-------|------------------------------------------------|-------------------------------------------------------------------|--------------|
+| 1     | Click The Sweat Life title on the navbar       | Directed to the home page                                         | Successful   |
+| 2     | Click the Home button on the navbar            | Directed to the home page                                         | Successful   |
+| 3     | Click the Activities button on the navbar      | Directed to the Activities page with user\-specific functionality | Successful   |
+| 4     | Click the Create Activity button on the navbar | Directed to the create activity page                              | Successful   |
+| 5     | Click the Logout button on the navbar          | Directed to the logout page                                       | Successful   |
+
+
+### Activities Page
+<br>
+
 
 
 ## Bug Fixes
@@ -367,6 +384,8 @@ Using the CLI, enter the following commands to deploy to Heroku
 [Codemy](https://www.youtube.com/c/Codemycom) for a better understanding of a simplified views structure.
 
 [Bootstrap](https://getbootstrap.com/) for some layout and styling features.
+
+[TableConvert](https://tableconvert.com/markdown-generator) for the creation of tables in markdown.
 
 ## Acknowledgements
 
