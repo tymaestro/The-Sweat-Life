@@ -70,7 +70,7 @@ As a registered (logged-in) user, I would like to:
 
 ## Flowchart
 
-![The Sweat Life Flowchart](/media/readme/sweatlife-flowchart.png)
+![The Sweat Life Flowchart](/media/readme/flowchart/sweatlife-flowchart.png)
 
 ## Wireframes
 
@@ -110,69 +110,69 @@ The agile development of this project used issues in the project environment on 
 
 The navigation bar gives you access to the activities page as well as an opportunity to either login with a previously created account or create an account via the sign up option.
 
-![Navbar Logged-Out](/media/readme/navbar-logged-out.png)
+![Navbar Logged-Out](/media/readme/features/navbar-logged-out.png)
 
 The navigation bar once you are logged in gives you the opportunity to add your own activities as well as log out of your account.
 
-![Navbar Logged-In](/media/readme/navbar-logged-in.png)
+![Navbar Logged-In](/media/readme/features/navbar-logged-in.png)
 
 ### Sign Up Page
 
 The sign up page allows you to create an account by providing a username and password for authentication. Creating an account gives you access to extra functionality such as the ability to create, edit, and delete your own activities and comment on the activities of others.
 
-![Sign-Up Page](/media/readme/signup-page.png)
+![Sign-Up Page](/media/readme/features/signup-page.png)
 
 ### Login Page
 
 As with the sign up page, the login page allows previously registered users to access the extra functionality that having an account provides.
 
-![Login Page](/media/readme/login-page.png)
+![Login Page](/media/readme/features/login-page.png)
 
 ### Logout Page
 
 The logout page allows you to confirm if you are sure you would like to logout
 
-![Logout Page](/media/readme/sign-out-page.png)
+![Logout Page](/media/readme/features/sign-out-page.png)
 
 ### Activities Page
 
 This page presents an ordered and paginated list of activities posted by users. Visible is the title and excerpt of the activity. These activities are public but an account must be created to leave a comment or create your own activities.
 
-![Activities Page (logged-out)](/media/readme/activities-logged-out.png)
+![Activities Page (logged-out)](/media/readme/features/activities-logged-out.png)
 
 ### Activities Page (logged-in)
 
-![Activities Page (logged-in)](/media/readme/activities-logged-in.png)
+![Activities Page (logged-in)](/media/readme/features/activities-logged-in.png)
 
 ### Activity Detail Page
 
 The activity detail page presents the selected activtiy in detail including its title, excerpt, content and comments left by users.
 
-![Activity Detail Page](/media/readme/activity-detail.png)
+![Activity Detail Page](/media/readme/features/activity-detail.png)
 
 ### Create Activity Page
 
 The create activity page displays a form where you can enter a title, excerpt and the content of your activity.
 
-![Create Activity Page](/media/readme/create-activity-page.png)
+![Create Activity Page](/media/readme/features/create-activity-page.png)
 
 ### Create Comment Page
 
 The create comment page is shown as a form where you can leave a comment on the selected post.
 
-![Create Comment Page](/media/readme/create-comment-page.png)
+![Create Comment Page](/media/readme/features/create-comment-page.png)
 
 ### Edit Activity Page
 
 The edit activity page displays your activity as a form, pre-populated with the details and content previously provided so that you can edit your post.
 
-![Edit Activity Page](/media/readme/update-activity-page.png)
+![Edit Activity Page](/media/readme/features/update-activity-page.png)
 
 ### Delete Activity Page
 
 The delete activity page displays a warning (defensive programming) to ensure that you are certain of your choice to delete the chosen activity and are aware of the consequences.
 
-![Delete Activity Page](/media/readme/delete-activity-page.png)
+![Delete Activity Page](/media/readme/features/delete-activity-page.png)
 
 ### 400 Error Page
 
@@ -182,7 +182,7 @@ The 400 error page displays a UX-friendly error message and the option to "retur
 
 The 403 error page displays a UX-friendly error message and the option to "return to safety".
 
-![403 Error Page](/media/readme/403-error-page.png)
+![403 Error Page](/media/readme/features/403-error-page.png)
 
 ### 404 Error Page
 
