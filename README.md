@@ -457,6 +457,28 @@ I have used Docstrings throughout my code to identify each function and its purp
 | 3     | Click Twitter button   | Directed to Twitter homepage in a separate tab   | Successful   |
 
 
+## Lighthouse Accessibility
+
+Home Page links for [Desktop](/media/readme/accessibility/home-lighthouse-desk.png) and [Mobile](/media/readme/accessibility/home-lighthouse-mobile.png)
+
+Activities Page links for [Desktop](/media/readme/accessibility/activities-lighthouse-desk.png) and [Mobile](/media/readme/accessibility/activities-lighthouse-mobile.png)
+
+Activity Detail Page links for [Desktop](/media/readme/accessibility/detail-lighthouse-desk.png) and [Mobile](/media/readme/accessibility/detail-lighthouse-mobile.png)
+
+Create Activity Page links for [Desktop](/media/readme/accessibility/create-lighthouse-desk.png) and [Mobile](/media/readme/accessibility/create-lighthouse-mobile.png)
+
+Add Comment Page links for [Desktop](/media/readme/accessibility/comment-lighthouse-desk.png) and [Mobile](/media/readme/accessibility/comment-lighthouse-mobile.png)
+
+Update Activity Page links for [Desktop](/media/readme/accessibility/edit-lighthouse-desk.png) and [Mobile](/media/readme/accessibility/edit-lighthouse-mobile.png)
+
+Delete Activity Page links for [Desktop](/media/readme/accessibility/delete-lighthouse-desk.png) and [Mobile](/media/readme/accessibility/delete-lighthouse-mobile.png)
+
+Login Page links for [Desktop](/media/readme/accessibility/login-lighthouse-desk.png) and [Mobile](/media/readme/accessibility/login-lighthouse-mobile.png)
+
+Logout Page links for [Desktop](/media/readme/accessibility/logout-lighthouse-desk.png) and [Mobile](/media/readme/accessibility/logout-lighthouse-mobile.png)
+
+Sign-Up Page links for [Desktop](/media/readme/accessibility/signup-lighthouse-desk.png) and [Mobile](/media/readme/accessibility/signup-lighthouse-mobile.png)
+
 ## Bug Fixes
 
 - During deployment, I couldn't connect my static files on Heroku through Cloudinary. I added {% load static %} and {% load cloudinary %} to each HTML page to solve this.
