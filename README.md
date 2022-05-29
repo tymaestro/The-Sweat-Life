@@ -8,60 +8,46 @@ The Sweat Life is a web application that allows users to post activities and int
 
 As a standard (not logged-in) user, I would like to:
 <br>
-<br>
 
 1. View the landing page and know that I'm on a social site for exercise enthusiasts
-<br>
 <br>
 
 2. View posts by users
 <br>
-<br>
 
 3. Have a unique sign-up option with username and password
-<br>
 <br>
 
 ### Logged-In User
 
 As a registered (logged-in) user, I would like to:
 <br>
-<br>
 
 1. Have a login option to log in to my previously registered account
-<br>
 <br>
 
 2. Create and post my own activities
 <br>
-<br>
 
 3. Rate how I felt after my activity
-<br>
 <br>
 
 4. View the uploads of other users
 <br>
-<br>
 
 5. Like and comment on users' posts
-<br>
 <br>
 
 6. Choose a date and time for group activities
 <br>
-<br>
 
 7. View the other users who have chosen these time slots
-<br>
 <br>
 
 8. Edit my activity
 <br>
-<br>
 
 9. Delete my activity
-<br>
 <br>
 
 ## Project Goals
