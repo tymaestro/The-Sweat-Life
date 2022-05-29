@@ -55,6 +55,10 @@ As a registered (logged-in) user, I would like to:
 
 ![The Sweat Life Flowchart](/media/readme/flowchart/sweatlife-flowchart.png)
 
+## Entity Relationship Diagram
+
+![Entity Relationship Diagram](/media/readme/erd.png)
+
 ## Wireframes
 
 [Activity List Web](/media/readme/wireframes/activity-list-web.png)
