@@ -3,51 +3,46 @@
 The Sweat Life is a web application that allows users to post activities and interact with other users by commenting on their posts.
 
 ## User Stories
+<br>
 
 ### Logged-Out User
+<br>
 
 As a standard (not logged-in) user, I would like to:
 <br>
 
 1. View the landing page and know that I'm on a social site for exercise enthusiasts
-<br>
 
 2. View posts by users
-<br>
 
 3. Have a unique sign-up option with username and password
 <br>
+<br>
 
 ### Logged-In User
+<br>
 
 As a registered (logged-in) user, I would like to:
 <br>
 
 1. Have a login option to log in to my previously registered account
-<br>
 
 2. Create and post my own activities
-<br>
 
 3. Rate how I felt after my activity
-<br>
 
 4. View the uploads of other users
-<br>
 
 5. Like and comment on users' posts
-<br>
 
 6. Choose a date and time for group activities
-<br>
 
 7. View the other users who have chosen these time slots
-<br>
 
 8. Edit my activity
-<br>
 
 9. Delete my activity
+<br>
 <br>
 
 ## Project Goals
@@ -357,6 +352,8 @@ Using the CLI, enter the following commands to deploy to Heroku
 [Pexels](https://www.pexels.com/) to find and download images.
 
 [Codemy](https://www.youtube.com/c/Codemycom) for a better understanding of a simplified views structure.
+
+[Bootstrap](https://getbootstrap.com/) for some layout and styling features.
 
 ## Acknowledgements
 
