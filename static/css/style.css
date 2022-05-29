@@ -26,6 +26,12 @@ h1 {
     width: 50%;
 }
 
+#home-page-card {
+    background-color: rgba(253, 248, 241, 0.899);
+    height: 98%;
+    padding: 10px;
+}
+
 /* Activity Pages Styling */
 
 #activity-content {

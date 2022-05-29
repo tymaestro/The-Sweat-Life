@@ -119,7 +119,7 @@ The logout page allows you to confirm if you are sure you would like to logout
 
 The home page welcomes users to the site and gives information on the concept behind the site and encourages you to sign-up to gain access to cool features where you can post your own activities and comment on the posts of other users.
 
-![Home Page]()
+![Home Page](/media/readme/features/home-page-feature.png)
 
 ### Activities Page
 
@@ -296,6 +296,19 @@ CSS: No errors were returned when passing through the official [Jigsaw](https://
 ### Testing and debugging code
 
 I have used Docstrings throughout my code to identify each function and its purpose.
+<br>
+
+| Tests | Description                               | Expected Result                 | Final Result |
+|-------|-------------------------------------------|---------------------------------|--------------|
+| 1     | Click The Sweat Life title on the navbar  | Directed to the home page       | Successful   |
+| 2     | Click the Home button on the navbar       | Directed to the home page       | Successful   |
+| 3     | Click the Activities button on the navbar | Directed to the Activities page | Successful   |
+| 4     | Click the Login button on the navbar      | Directed to the login page      | Successful   |
+| 5     | Click the Sign\-Up button on the navbar   | Directed to the sign\-up page   | Successful   |
+| 6     |                                           |                                 |              |
+| 7     |                                           |                                 |              |
+|       |                                           |                                 |              |
+
 
 ## Bug Fixes
 
