@@ -177,6 +177,8 @@ The 403 error page displays a UX-friendly error message and the option to "retur
 
 The 404 error page displays a UX-friendly error message and the option to "return to safety".
 
+![404 Error Page](/media/readme/features/404-error-page.png)
+
 ### 500 Error Page
 
 The 500 error page displays a UX-friendly error message and the option to "return to safety".
@@ -425,6 +427,22 @@ I have used Docstrings throughout my code to identify each function and its purp
 | Tests | Description           | Expected Result                     | Final Result |
 |-------|-----------------------|-------------------------------------|--------------|
 | 1     | Click Sign Out button | Directed to the logged out homepage | Successful   |
+
+
+### 403 Error Page
+<br>
+
+| Tests | Description                 | Expected Result                 | Final Result |
+|-------|-----------------------------|---------------------------------|--------------|
+| 1     | Click Back To Safety button | Directed to the Activities page | Successful   |
+
+
+### 404 Error Page
+<br>
+
+| Tests | Description                 | Expected Result                 | Final Result |
+|-------|-----------------------------|---------------------------------|--------------|
+| 1     | Click Back To Safety button | Directed to the Activities page | Successful   |
 
 
 ### Footer
