@@ -327,7 +327,7 @@ I have used Docstrings throughout my code to identify each function and its purp
 
 | Tests | Description                        | Expected Result                                  | Final Result |
 |-------|------------------------------------|--------------------------------------------------|--------------|
-| 1     | Select an activity                 | Directed to the activity detail page             | Successful   |
+| 1     | Select an activity                 | Directed to the selected activity detail page    | Successful   |
 | 2     | Search an activity using a keyword | Only activities with the selected keyword appear | Successful   |
 | 3     | Click next and previous buttons    | Navigated to next page of activities             | Successful   |
 
@@ -337,11 +337,11 @@ I have used Docstrings throughout my code to identify each function and its purp
 
 | Tests | Description                        | Expected Result                                  | Final Result |
 |-------|------------------------------------|--------------------------------------------------|--------------|
-| 1     | Select an activity                 | Directed to the activity detail page             | Successful   |
+| 1     | Select an activity                 | Directed to the selected activity detail page    | Successful   |
 | 2     | Search an activity using a keyword | Only activities with the selected keyword appear | Successful   |
 | 3     | Click next and previous buttons    | Navigated to next page of activities             | Successful   |
-| 4     | Click edit activity button         | Navigated to edit activity page                  | Successful   |
-| 5     | Click delete activity button       | Navigated to delete activity page                | Successful   |
+| 4     | Click edit activity button         | Navigated to selected edit activity page         | Successful   |
+| 5     | Click delete activity button       | Navigated to selected delete activity page       | Successful   |
 
 
 ### Activity Detail Page (logged-out)
@@ -356,12 +356,12 @@ I have used Docstrings throughout my code to identify each function and its purp
 ### Activity Detail Page (logged-in)
 <br>
 
-| Tests | Description                      | Expected Result                      | Final Result |
-|-------|----------------------------------|--------------------------------------|--------------|
-| 1     | Click Add Comment button         | Directed to add comment page         | Successful   |
-| 2     | Click Back button                | Directed to the activities page      | Successful   |
-| 3     | Click the Edit Activity button   | Directed to the edit activity page   | Successful   |
-| 4     | Click the Delete Activity button | Directed to the delete activity page | Successful   |
+| Tests | Description                      | Expected Result                             | Final Result |
+|-------|----------------------------------|---------------------------------------------|--------------|
+| 1     | Click Add Comment button         | Directed to add comment page                | Successful   |
+| 2     | Click Back button                | Directed to the activities page             | Successful   |
+| 3     | Click the Edit Activity button   | Directed to the selected edit activity page | Successful   |
+| 4     | Click the Delete Activity button | Directed to the delete activity page        | Successful   |
 
 
 ### Create Activity Page
@@ -371,6 +371,70 @@ I have used Docstrings throughout my code to identify each function and its purp
 |-------|------------------------------------------------------------------------|---------------------------------------------------|--------------|
 | 1     | Click Post button without filling in required title and content fields | Notified to fill in required fields               | Successful   |
 | 2     | Click Post button with required fields filled                          | Directed to updated Activities page with new post | Successful   |
+
+
+### Add Comment Page
+<br>
+
+| Tests | Description                                    | Expected Result                                           | Final Result |
+|-------|------------------------------------------------|-----------------------------------------------------------|--------------|
+| 1     | Click Submit button with empty content field   | Notified to fill in required field                        | Successful   |
+| 2     | Click Submit button with required field filled | Directed to updated Activity detail page with new comment | Successful   |
+
+
+### Edit Activity Page
+<br>
+
+| Tests | Description                                         | Expected Result                     | Final Result |
+|-------|-----------------------------------------------------|-------------------------------------|--------------|
+| 1     | Click Update button having removed title or content | Notified to fill in required fields | Successful   |
+| 2     | Click Submit button with required fields filled     | Directed to updated activities page | Successful   |
+
+
+### Delete Activity Page
+<br>
+
+| Tests | Description                                                | Expected Result                                                   | Final Result |
+|-------|------------------------------------------------------------|-------------------------------------------------------------------|--------------|
+| 1     | Click Delete button to confirm deletion of chosen activity | Directed to updated activities page with deleted activity removed | Successful   |
+
+
+### Sign-Up Page
+<br>
+
+| Tests | Description                                                     | Expected Result                     | Final Result |
+|-------|-----------------------------------------------------------------|-------------------------------------|--------------|
+| 1     | Click sign\-in link in description                              | Directed to the sign\-in page       | Successful   |
+| 2     | Click the Sign Up button without required username and password | Notified to fill in required fields | Successful   |
+| 3     | Click the Sign Up button with required fields filled            | Directed to logged\-in homepage     | Successful   |
+
+
+### Login Page
+<br>
+
+| Tests | Description                                                     | Expected Result                     | Final Result |
+|-------|-----------------------------------------------------------------|-------------------------------------|--------------|
+| 1     | Click sign\-up link in description                              | Directed to the sign\-up page       | Successful   |
+| 2     | Click the Sign In button without required username and password | Notified to fill in required fields | Successful   |
+| 3     | Click the Sign In button with required fields filled            | Directed to logged\-in homepage     | Successful   |
+
+
+### Logout Page
+<br>
+
+| Tests | Description           | Expected Result                     | Final Result |
+|-------|-----------------------|-------------------------------------|--------------|
+| 1     | Click Sign Out button | Directed to the logged out homepage | Successful   |
+
+
+### Footer
+<br>
+
+| Tests | Description            | Expected Result                                  | Final Result |
+|-------|------------------------|--------------------------------------------------|--------------|
+| 1     | Click Facebook button  | Directed to Facebook homepage in separate tab    | Successful   |
+| 2     | Click Instagram button | Directed to Instagram homepage in a separate tab | Successful   |
+| 3     | Click Twitter button   | Directed to Twitter homepage in a separate tab   | Successful   |
 
 
 ## Bug Fixes
