@@ -481,6 +481,10 @@ Sign-Up Page links for [Desktop](/media/readme/accessibility/signup-lighthouse-d
 
 ## Bug Fixes
 
+- During the creation of my home page view which came towards the end of development, I encountered a bug when trying to render the IndexView using View. As a fix, I used TemplateView from Django's generic views instead.
+
+- Initial creation of my Activity model using slugs caused a duplicate ID error so I deleted the slug field because a unique ID would be created anyway and deleted all activities in my database as a reset.
+
 - During deployment, I couldn't connect my static files on Heroku through Cloudinary. I added {% load static %} and {% load cloudinary %} to each HTML page to solve this.
 
 - I used IDs to override several Bootstrap stylings but as a result of a few of these IDs being in for loops, I changed the CSS to have an ID wildcard and added the primary key of each post to this ID. Therefore, each ID would be unique.
@@ -538,6 +542,8 @@ Using the CLI, enter the following commands to deploy to Heroku
 [Pexels](https://www.pexels.com/) to find and download images.
 
 [Codemy](https://www.youtube.com/c/Codemycom) for a better understanding of a simplified views structure.
+
+Django walkthrough for sign-up form structure in HTML.
 
 [Bootstrap](https://getbootstrap.com/) for some layout and styling features.
 
