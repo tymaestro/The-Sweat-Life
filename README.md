@@ -459,6 +459,10 @@ I have used Docstrings throughout my code to identify each function and its purp
 
 ## Bug Fixes
 
+- During deployment, I couldn't connect my static files on Heroku through Cloudinary. I added {% load static %} and {% load cloudinary %} to each HTML page to solve this.
+
+- I used IDs to override several Bootstrap stylings but as a result of a few of these IDs being in for loops, I changed the CSS to have an ID wildcard and added the primary key of each post to this ID. Therefore, each ID would be unique.
+
 ## Deployment
 
 ### Heroku Deployment

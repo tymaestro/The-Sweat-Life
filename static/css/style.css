@@ -23,7 +23,7 @@ h1 {
 
 #home-page {
     margin-top: 140px;
-    width: 50%;
+    width: 80%;
 }
 
 #home-page-card {
@@ -41,6 +41,18 @@ h1 {
 [id*="activity-card"] {
     background-color: rgba(253, 248, 241, 0.899);
     height: 98%;
+}
+
+#create-activity-card {
+    background-color: rgba(253, 248, 241, 0.899);
+    height: 98%;
+    margin-bottom: 10px;
+}
+
+[id*="update-activity-card"] {
+    background-color: rgba(253, 248, 241, 0.899);
+    height: 98%;
+    margin-bottom: 10px;
 }
 
 [id*="activity-title"] {
@@ -206,4 +218,64 @@ footer div a {
     font-size: 150%;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 540px) {
+    #home-page {
+        margin-top: 20px;
+        width: auto;
+    }
+
+    #comment-margin {
+        margin-top: 5px;
+    }
+
+    #login-styling {
+        margin-bottom: 10px;
+    }
+
+    #signup-styling {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    #home-page {
+        margin-top: 20px;
+        width: auto;
+    }
+
+    #activity-content {
+        margin: 5px;
+    }
+
+    #comment-content {
+        margin: 5px;
+    }
+
+    #signup {
+        margin-top: 120px;
+        width: auto;
+    }
+
+    #login {
+        margin-top: 140px;
+        width: auto;
+    }
+
+    #signout {
+        margin-top: 190px;
+        width: auto;
+    }
+
+    #error {
+        margin-top: 140px;
+        width: auto;
+    }
+
+    #media-query-container {
+        padding: 0px;
+    }
 }
