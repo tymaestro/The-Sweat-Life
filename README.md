@@ -1,9 +1,10 @@
 # The Sweat Life
 
-The Sweat Life is a web application that allows users to post activities and interact with other users by commenting on their posts.
+The live link can be found here: [The Sweat Life](https://pp42022.herokuapp.com/activities)
 <br>
 
-The live link can be found [here](https://pp42022.herokuapp.com/activities)
+The Sweat Life is a web application that allows users to post activities and interact with other users by commenting on their posts.
+<br>
 
 ![Responsive Pages](/media/readme/features/responsive-pp4.png)
 
